@@ -14,7 +14,7 @@ function Apps()
                 <li><Link to='/Createuser'>Createuser</Link></li></ol>
             <Routes>
                 <Route path="/" element={<User/>}/>
-                <Route path="/Updateuser" element={<Updateuser/>}/>
+                <Route path="/Updateuser/:id" element={<Updateuser/>}/>
                 <Route path="/Createuser" element={<Createuser/>}/>
             </Routes>
         </Router>

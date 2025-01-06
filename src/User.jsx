@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
 function User()
 
 {
@@ -9,6 +10,7 @@ function User()
         name:"deva",
     email:"deva@gmail.com",
      address:"chennai"}]);
+      const navigate=useNavigate([]);
      useEffect(()=>
     {
         axios.get('https://hosting-2-tjx0.onrender.com/api/user/fetch')
@@ -21,6 +23,7 @@ function User()
         axios.delete(`https://hosting-2-tjx0.onrender.com/api/user/delete/${id}`)
         .then(result=>{
             console.log("user deleted successfully");
+            navigate('/');
         })
         .catch(err=>{
             console.log(err)

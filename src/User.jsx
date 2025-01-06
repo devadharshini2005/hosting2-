@@ -1,7 +1,7 @@
 import { useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 function User()
 
 {
@@ -10,7 +10,7 @@ function User()
         name:"deva",
     email:"deva@gmail.com",
      address:"chennai"}]);
-      const navigate=useNavigate([]);
+     const navigate = useNavigate();
      useEffect(()=>
     {
         axios.get('https://hosting-2-tjx0.onrender.com/api/user/fetch')

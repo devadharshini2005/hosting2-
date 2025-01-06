@@ -1,0 +1,11 @@
+
+    img {
+        width: 300px;
+        height: 200px;
+      }
+      @media (orientation: portrait) {
+        img {
+          width: 300px;
+          height: 200px; /* Fixed size for larger screens */
+        }
+    }

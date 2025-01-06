@@ -1,0 +1,36 @@
+label {
+    font-size: 20px;
+    text-align: center;
+    display: inline-block; /* Ensures centering works */
+    margin-bottom: 8px; /* Adds spacing below the label */
+}
+
+legend {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 12px; 
+}
+
+    /*body {
+        background-image: url("C:\Users\Devadharshini\Desktop\training react\demo-html\thirdweb\src\download.jpg"); 
+        margin: 0;
+        height: 100vh; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }*/
+
+
+.container {
+    align-self: center;
+    background-color: white;
+    opacity: 0.7;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+#cars{
+    width: 50%;  
+}

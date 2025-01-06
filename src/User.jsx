@@ -1,7 +1,7 @@
 import { useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 function User()
 
 {
@@ -21,7 +21,7 @@ function User()
     },[]);
     const deleteUser=(id)=>{
         axios.delete(`https://hosting-2-tjx0.onrender.com/api/user/delete/${id}`)
-        .then(result=>{
+        .then(()=>{
             console.log("user deleted successfully");
             navigate('/');
         })
@@ -31,12 +31,13 @@ function User()
     }
     return(
         <>
-        
+        <h1>
+         <li><Link id="link" to='/Createuser'>Createuser</Link></li></h1>
         <table border={1}>
             <tr>
                 <th>Name</th>
-                <th>email</th>
-                <th>address</th>
+                <th>Email</th>
+                <th>Address</th>
                 <th>Actions</th>
             </tr>{
             user.map((users) => (
@@ -48,7 +49,7 @@ function User()
                     <Link to={`/Updateuser/${users._id}`}>
                                       <button>Update</button>
                                 </Link>
-                                <button onClick={(e)=>deleteUser(users._id)} >Delete</button>
+                                <button onClick={()=>deleteUser(users._id)} >Delete</button>
                           
                         </td>
                 </tr>

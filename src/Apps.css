@@ -1,0 +1,113 @@
+/* Style for the main heading */
+h1 {
+    text-align: center;
+   
+   
+}
+
+/* Style for the Createuser link */
+#link {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    background-color: #08090a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Createuser link */
+#link:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for table headers */
+th {
+    background-color: #86127a;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Style for table cells */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: #fcfcfc;
+}
+
+/* Style for table rows */
+
+
+/* Style for buttons in the Actions column */
+button {
+    padding: 8px 16px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Specific styles for Update and Delete buttons */
+button:first-child {
+    background-color: #3a2535; /* Update button color */
+}
+
+button:last-child {
+    background-color: #185b36; /* Delete button color */
+}
+
+/* Hover effects for the buttons */
+button:hover {
+    opacity: 0.8;
+}
+#label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for the form inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+#div {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://t4.ftcdn.net/jpg/08/04/31/73/360_F_804317316_TA6ewpJrhCQvDhwlrkGgLbmSAgMdS8bt.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

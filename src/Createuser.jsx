@@ -23,14 +23,15 @@ function Createuser() {
 
 
     return (
-        <div>
+        <div id="div">
+            <h1>CreateUser</h1>
             <form onSubmit={submit}>
-                <label>Name</label>
+                <label id="label">Name</label>
                 <input type="text" id="name" onChange={(e)=>setName(e.target.value)} /><br/><br></br>
-                <label>Email</label>
-                <input type="text" id="text"  onChange={(e)=>setEmail(e.target.value)}></input><br/><br/>
-                <label>Address</label>
-                <input type="text" id="address" onChange={(e)=>setAddress(e.target.value)}></input><br/><br/>
+                <label id="label">Email</label>
+                <input type="text" id="name"  onChange={(e)=>setEmail(e.target.value)}></input><br/><br/>
+                <label id="label">Address</label>
+                <input type="text" id="name" onChange={(e)=>setAddress(e.target.value)}></input><br/><br/>
                 <button type="submit">Create</button>
                 </form>        
                 </div>

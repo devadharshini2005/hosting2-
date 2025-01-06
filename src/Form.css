@@ -1,8 +1,9 @@
-label {
+
+/*label {
     font-size: 20px;
     text-align: center;
-    display: inline-block; /* Ensures centering works */
-    margin-bottom: 8px; /* Adds spacing below the label */
+    display: inline-block;
+    margin-bottom: 8px; 
 }
 
 legend {
@@ -18,7 +19,7 @@ legend {
         display: flex; 
         justify-content: center;
         align-items: center;
-    }*/
+    }
 
 
 .container {
@@ -34,3 +35,4 @@ legend {
 #cars{
     width: 50%;  
 }
+    */

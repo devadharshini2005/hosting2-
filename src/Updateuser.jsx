@@ -24,13 +24,14 @@ function Updateuser() {
     }
 
     return (
-        <div>
+        <div id="div">
+            <h1>Updateuser</h1>
             <form onSubmit={updateuser}>
-                <label>Name</label>
+                <label id="label">Name</label>
                 <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} /><br /><br />
-                <label>Email</label>
+                <label id="label">Email</label>
                 <input type="text" id="email" value={email} onChange={(e) => setEmail(e.target.value)} /><br /><br />
-                <label>Address</label>
+                <label id="label">Address</label>
                 <input type="text" id="address" value={address} onChange={(e) => setAddress(e.target.value)} /><br /><br />
                 <button type="submit">Update</button>
             </form>

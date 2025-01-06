@@ -1,6 +1,7 @@
 import User from './User.jsx';
 import Updateuser from './Updateuser.jsx';
 import Createuser from './Createuser.jsx';
+import "./Apps.css";
 import { Routes, Route, Link, BrowserRouter as Router } from 'react-router-dom';
 function Apps()
 {
@@ -8,10 +9,7 @@ function Apps()
         <>
         <Router>
             
-            <ol>
-                <li><Link to='/'>User</Link></li>
-                <li><Link to='/Updateuser'>Updateuser</Link></li>
-                <li><Link to='/Createuser'>Createuser</Link></li></ol>
+           
             <Routes>
                 <Route path="/" element={<User/>}/>
                 <Route path="/Updateuser/:id" element={<Updateuser/>}/>
